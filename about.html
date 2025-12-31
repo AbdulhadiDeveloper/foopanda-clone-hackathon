@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodpanda | Food & Groceries Delivery</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+                        alt="foodpanda">
+                </a>
+            </div>
+
+            <div class="nav-container-right">
+                <nav class="nav-links" id="mainNav">
+                    <ul class="nav-list">
+                        <li class="nav-item active"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="/newsroom.html">Newsroom</a></li>
+                        <li class="nav-item"><a href="/partners.html">Partners</a></li>
+                        <li class="nav-item"><a href="/pandaads.html" target="_blank">panda ads</a></li>
+                        <li class="nav-item"><a href="/contact.html">Contact</a></li>
+                        <li class="nav-item"><a href="#">Careers</a></li>
+                    </ul>
+                </nav>
+
+                <div class="nav-actions">
+                    <div class="location-dropdown">
+                        <button class="btn-location">Choose location</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Bangladesh</a></li>
+                            <li><a href="#">Cambodia</a></li>
+                            <li><a href="#">Hong Kong</a></li>
+                            <li><a href="#">Laos</a></li>
+                            <li><a href="#">Malaysia</a></li>
+                            <li><a href="#">Myanmar</a></li>
+                            <li><a href="#">Pakistan</a></li>
+                            <li><a href="#">Philippines</a></li>
+                            <li><a href="#">Singapore</a></li>
+                            <li><a href="#">Taiwan</a></li>
+                            <li><a href="#">Thailand</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="mobile-toggle" id="mobileMenuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section -->
+
+    <main>
+        <section class="heroSection">
+            <img src="https://www.foodpanda.com/wp-content/uploads/2025/07/about-foodpanda.webp"
+                alt="image" class="bgVideoContent">
+            <div class="heroOverlay">
+                <div class="maincontainer">
+                    <div class="heroTextWrapper">
+                        <h1 class="heroTitle">
+                            About <br>
+                            foodpanda
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- back to top button -->
+
+    <button class="backToTopButton" id="backToTopBtn">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+
+
+
+    <!-- info section -->
+
+    <section class="infoSection">
+        <div class="mainContainer">
+            <div class="infoTextWrapper">
+                <h2 class="infoHeading">
+                    From food delivery to your <br> daily convenience companion.
+                </h2>
+                <p class="infoDescription">
+                    A subsidiary of Delivery Hero, foodpanda launched in Singapore in 2014 as a food delivery platform.
+                    Dedicated to helping customers get their tasty favourites fast, it quickly won the hearts and minds
+                    of customers in APAC. <br><br>
+
+                    Powered by tech and operational excellence, foodpanda has been growing its quick-commerce footprint
+                    in more than 400 cities across 11 markets in Asia – Singapore, Hong Kong, Thailand, Malaysia,
+                    Pakistan, Taiwan, Philippines, Bangladesh, Laos, Cambodia, and Myanmar. <br><br>
+
+                    Thanks to dedicated partners, riders, and a team united by shared values, foodpanda is now providing
+                    millions with a convenient way to get food and groceries in a few taps.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- carousel section -->
+
+    <section class="aboutCarouselSection">
+        <div class="mainContainer">
+            <div class="carouselWrapper">
+                <div class="carouselContent">
+                    <div class="carouselTextSide">
+                        <h2 class="carouselHeading" id="carouselHeading">Customers come first</h2>
+                        <p class="carouselDescription" id="carouselDescription">
+                            We’re far more than just swift food delivery. foodpanda enables customers to pick up their
+                            takeaway meals, skip boring grocery trips and send parcels. Customer needs are the core and
+                            centre of our business. Download the app to experience true convenience.
+                        </p>
+
+                        <div class="carouselControls">
+                            <button class="arrowBtn" id="prevBtn"><i class="fa-solid fa-arrow-left"></i></button>
+                            <div class="dotContainer" id="dotContainer">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <button class="arrowBtn" id="nextBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="carouselImageSide">
+                        <img src="https://www.foodpanda.com/wp-content/uploads/2024/10/fp-about-2.webp"
+                            alt="foodpanda customers" class="carouselImg" id="carouselImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- values section -->
+     <section class="valuesSection">
+    <div class="mainContainer">
+        <h2 class="valuesMainHeading">Our values</h2>
+        
+        <div class="valuesPillsContainer">
+            <div class="valuesPillsRow">
+                <button class="valuePill" data-index="0">prioritise, decide, deliver</button>
+            </div>
+            <div class="valuesPillsRow">
+                <button class="valuePill active" data-index="1">start with customer, end with customer</button>
+                <button class="valuePill" data-index="2">own it end-to-end</button>
+            </div>
+            <div class="valuesPillsRow">
+                <button class="valuePill" data-index="3">challenge the status quo</button>
+                <button class="valuePill" data-index="4">we before me</button>
+            </div>
+            <div class="valuesPillsRow">
+                <button class="valuePill" data-index="5">plan for tomorrow, focus on today</button>
+            </div>
+        </div>
+
+        <div class="valuesDisplayWrapper">
+            <div class="valuesTextSide">
+                <h2 class="valuesDisplayHeading" id="valuesDisplayHeading">start with customer, end with customer</h2>
+                <p class="valuesDisplayParagraph" id="valuesDisplayParagraph">
+                    We want our consumers, vendors, riders, employees (including prospective ones) – the customers who make up our ecosystem – to keep coming back to the product, service, and experience we create. To achieve this, we keep them at the centre of everything we do.
+                </p>
+            </div>
+            <div class="valuesImageSide">
+                <img src="https://www.foodpanda.com/wp-content/uploads/2023/03/start-with-customer-end-with-customer.png" alt="Our Values Illustration" class="valuesIllustration" id="valuesIllustration">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Find the job section -->
+
+    <section class="deliverySection" style="background-color: #ddd;">
+        <div class="mainContainer">
+            <div class="deliveryWrapper">
+
+                <div class="deliveryTextArea">
+                    <h2 class="deliveryHeading">Join the panda team!</h2>
+                    <p class="deliveryDescription">
+                       Hungry for growth? There’s a seat at our table! We’re looking for the best in tech, marketing, sales, logistics, account management and more. Explore career opportunities at foodpanda now.
+                    </p>
+                    <button class="aboutButton">view jobs</button>
+                </div>
+
+
+                <div class="deliveryImageArea">
+                    <img src="https://www.foodpanda.com/wp-content/uploads/2025/07/fp-home-3.webp"
+                        alt="foodpanda mobile app" class="deliveryImage">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footerSection">
+        <div class="mainContainer">
+            <div class="footerLogoRow">
+                <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg" alt="foodpanda"
+                    class="footerLogoImage">
+            </div>
+
+            <div class="footerGrid">
+                <div class="footerLinksGroup">
+                    <div class="footerColumn">
+                        <h4 class="footerHeading">Navigate</h4>
+                        <ul class="footerList">
+                            <li><a href="#" class="footerLink activeLink">Home</a></li>
+                            <li><a href="/about.html" class="footerLink">About</a></li>
+                            <li><a href="#" class="footerLink">Contact</a></li>
+                            <li><a href="#" class="footerLink">Newsroom</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footerColumn">
+                        <h4 class="footerHeading">Collaborate</h4>
+                        <ul class="footerList">
+                            <li><a href="#" class="footerLink">Explore careers</a></li>
+                            <li><a href="#" class="footerLink">Become a rider</a></li>
+                            <li><a href="#" class="footerLink">Feed your team</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footerColumn followUsColumn">
+                    <h4 class="footerHeading">Follow us on</h4>
+                    <div class="socialIconsWrapper">
+                        <a href="#" class="socialIconLink"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="socialIconLink"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="socialIconLink"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footerBottomLine">
+                <p class="copyrightText">Copyright © 2025 foodpanda</p>
+                <div class="footerLegalLinks">
+                    <a href="#" class="legalLink">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/javascript/global.js"></script>
+    <script src="./assets/javascript/about.js"></script>
+</body>
+
+</html>
