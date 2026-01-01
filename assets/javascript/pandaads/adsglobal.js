@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             // Redirects to your contact page
-            window.location.href = 'contact.html'; 
+            window.location.href = '/adsContacts.html'; 
         });
     });
 
@@ -36,6 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 toggleMobileMenu();
             }
         });
+    });
+});
+
+document.querySelectorAll('.hasDropdown > a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024) {
+            e.preventDefault();
+            const parent = link.parentElement;
+            parent.classList.toggle('mobileOpen');
+        }
     });
 });
 

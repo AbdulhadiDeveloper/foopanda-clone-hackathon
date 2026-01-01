@@ -75,7 +75,7 @@ input {
     right: 5%;
     width: 45px;
     height: 45px;
-    background-color: var(--pandaPink);
+    background-color: var(--panda-pink);
     color: var(--white);
     border: none;
     border-radius: 4px;
@@ -93,6 +93,22 @@ input {
 .backToTopButton.show {
     opacity: 1;
     visibility: visible;
+}
+
+
+
+.maincontainer{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+}
+.mainContainer {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
 }
 
 
@@ -116,6 +132,72 @@ input {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 0 0 20px;
+}
+
+.adsNavItem.hasDropdown {
+    position: relative;
+}
+
+.dropIcon {
+    font-size: 10px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: var(--white);
+    min-width: 220px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    border-radius: 0 0 8px 8px;
+    z-index: 3000;
+}
+
+.dropdownMenu li a {
+    padding: 12px 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--textBlack);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.dropdownMenu li a:hover {
+    background-color: #fff5f8;
+    color: var(--pandaPink);
+}
+
+/* Hover Logic */
+.adsNavItem:hover .dropdownMenu {
+    display: block;
+}
+
+.adsNavItem:hover .dropIcon {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+    .dropdownMenu {
+        position: static;
+        box-shadow: none;
+        padding-left: 20px;
+        display: none; /* In mobile, usually controlled by click, but keeping simple for now */
+    }
+    
+    .adsNavItem.hasDropdown:hover .dropdownMenu {
+        display: block;
+    }
+    
+    .adsNavItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* Logo */
@@ -320,3 +402,240 @@ input {
 
 /* Scroll Lock */
 body.navOpen { overflow: hidden; }
+
+
+
+/* footer section  */
+
+
+.adsFooterSection {
+    background-color: #000000;
+    color: var(--white);
+    padding: 80px 0 40px;
+    width: 100%;
+}
+
+.footerLogoRow {
+    margin-bottom: 50px;
+}
+
+.footerLogoImg {
+    height: 34px;
+    display: block;
+}
+
+.adsFooterGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.footerHeading {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+
+.footerLinkList {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLink {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 12px;
+    transition: var(--transition);
+}
+
+.footerLink:hover {
+    color: var(--panda-pink);
+}
+
+.footerBtnWrapper {
+    margin-top: 5px;
+}
+
+.footerContactBtn {
+    background-color: var(--panda-pink);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.footerContactBtn:hover {
+    background-color: #e02675;
+}
+
+.footerSocialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.socialIconLink {
+    color: var(--white);
+    font-size: 24px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.socialIconLink:hover {
+    color: var(--panda-pink);
+}
+
+.footerBottomRow {
+    padding-top: 30px;
+}
+
+.copyrightText {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .adsFooterGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .adsFooterGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footerSection {
+        padding: 60px 0 30px;
+    }
+
+    .footerLogoRow {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+/* retail Solutions Intro */
+
+.retailSolutionsIntro {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.retailIntroContent {
+    max-width: 1100px;
+}
+
+.retailIntroHeading {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--textBlack);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.retailIntroDescription {
+    font-size: 17px;
+    color: var(--textBlack);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .retailIntroHeading {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .retailSolutionsIntro {
+        padding: 60px 0;
+    }
+    .retailIntroHeading {
+        font-size: 32px;
+    }
+    .retailIntroDescription {
+        font-size: 16px;
+    }
+}
+
+/* cta Pink Section */
+
+.ctaPinkSection {
+    background-color: var(--panda-pink);
+    padding: 60px 0;
+    width: 100%;
+}
+
+.ctaPinkFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ctaPinkHeading {
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.ctaPinkBtn {
+    background-color: var(--white);
+    color: var(--panda-pink);
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.ctaPinkBtn:hover {
+    transform: scale(1.05);
+    background-color: #fcfcfc;
+}
+
+@media (max-width: 1024px) {
+    .ctaPinkHeading {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ctaPinkFlex {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .ctaPinkSection {
+        padding: 50px 0;
+    }
+    
+    .ctaPinkHeading {
+        font-size: 26px;
+    }
+
+    .ctaPinkBtn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

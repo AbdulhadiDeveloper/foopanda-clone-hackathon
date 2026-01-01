@@ -1,0 +1,511 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+:root {
+    --primary-color: #D70F64;
+    --primary-hover: #AD0A50;
+    --textBlack: black;
+    --text-gray: #707070;
+    --bg-light: #F7F7F7;
+    --white: #FFFFFF;
+    --border-color: #EBEBEB;
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-black);
+    background-color: var(--white);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    transition: var(--transition);
+}
+
+input {
+    font-family: inherit;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-outline {
+    border: 1px solid var(--text-black);
+    color: var(--text-black);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.btn-outline:hover {
+    background-color: var(--bg-light);
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: var(--text-black);
+}
+
+
+/* navbar */
+
+:root {
+    --panda-pink: #D70F64;
+    --text-black: #000000;
+    --border-light: #EBEBEB;
+    --white: #ffffff;
+    --transition: all 0.2s ease-in-out;
+}
+
+
+/* in App Ads Section */
+
+
+.inAppAdsSection {
+    padding: 100px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.inAppAdsHeading {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--textBlack);
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.1;
+}
+
+.inAppAdsGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.inAppAdsCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mockupWrapper {
+    width: 100%;
+    margin-bottom: 35px;
+    transition: var(--transition);
+}
+
+.mockupWrapper:hover {
+    transform: translateY(-10px);
+}
+
+.mockupImg {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+}
+
+.mockupTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--textBlack);
+    margin-bottom: 15px;
+}
+
+.mockupDescription {
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--textBlack);
+    max-width: 280px;
+}
+
+@media (max-width: 1024px) {
+    .inAppAdsHeading {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    .inAppAdsGrid {
+        gap: 20px;
+    }
+    .mockupTitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inAppAdsGrid {
+        flex-direction: column;
+        gap: 80px;
+    }
+    .inAppAdsSection {
+        padding: 60px 0;
+    }
+    .inAppAdsHeading {
+        font-size: 28px;
+    }
+    .mockupDescription {
+        max-width: 100%;
+    }
+}
+
+/* boost In App Section */
+
+
+.boostInAppSection {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.boostInAppHeading {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--textBlack);
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+.pillsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.pillsRow {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.pillItem {
+    padding: 10px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--panda-pink);
+    color: var(--panda-pink);
+    transition: var(--transition);
+}
+
+.pillItem.active {
+    background-color: var(--panda-pink);
+    color: var(--white);
+}
+
+.contentDisplayArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.contentDisplayArea.fade {
+    opacity: 0;
+}
+
+.contentLeftSide {
+    flex: 1;
+}
+
+.contentRightSide {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.displayTitle {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--textBlack);
+}
+
+.displayPara {
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--textBlack);
+    max-width: 400px;
+}
+
+.displayMockup {
+    width: 150%;
+    max-width: 520px;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .contentDisplayArea {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contentRightSide {
+        justify-content: center;
+    }
+    .displayPara {
+        margin: 0 auto;
+    }
+    .boostInAppHeading, .displayTitle {
+        font-size: 34px;
+    }
+}
+
+/* off App Ads Section */
+
+.offAppAdsSection {
+    padding: 100px 0;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.offAppAdsHeading {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--textBlack);
+    margin-bottom: 80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.offAppAdsGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.offAppAdsCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.offAppAdsImageWrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offAppAdsImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.offAppAdsCard:hover .offAppAdsImage {
+    transform: translateY(-10px);
+}
+
+.offAppAdsTitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--textBlack);
+    margin-bottom: 15px;
+}
+
+.offAppAdsDesc {
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--textBlack);
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .offAppAdsHeading {
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    .offAppAdsGrid {
+        gap: 20px;
+    }
+    .offAppAdsTitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .offAppAdsGrid {
+        flex-direction: column;
+        gap: 70px;
+    }
+    .offAppAdsSection {
+        padding: 60px 0;
+    }
+    .offAppAdsHeading {
+        font-size: 28px;
+    }
+    .offAppAdsDesc {
+        max-width: 100%;
+    }
+    .offAppAdsImageWrapper {
+        margin-bottom: 25px;
+    }
+}
+
+
+/* media Kit Section */
+
+.mediaKitSection {
+    background-color: #f7f7f7;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.mediaKitWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.mediaKitTextArea {
+    flex: 1;
+}
+
+.mediaKitImageArea {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mediaKitHeading {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--textBlack);
+    line-height: 1.1;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.mediaKitDescription {
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--textBlack);
+    margin-bottom: 35px;
+    max-width: 480px;
+}
+
+.getStartedButton {
+    background-color: var(--panda-pink);
+    color: var(--white);
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.getStartedButton:hover {
+    background-color: #e02675;
+    transform: scale(1.02);
+}
+
+.rocketIllustration {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+    .mediaKitHeading {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 992px) {
+    .mediaKitWrapper {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .mediaKitImageArea {
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .mediaKitHeading, .mediaKitDescription {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mediaKitHeading {
+        font-size: 30px;
+    }
+    
+    .mediaKitSection {
+        padding: 60px 0;
+    }
+
+    .rocketIllustration {
+        max-width: 300px;
+    }
+}
